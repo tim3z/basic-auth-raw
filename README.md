@@ -6,7 +6,7 @@ Basic Authentication over which a concrete authentication mechanism can be built
 This library exports `BasicAuthRaw` which you could directly use on the request handler.
 #### Example
 
-```
+```rust
 #[get("/secure-path")
 fn secret(basic: BasicAuthRaw) -> String {
     format!("Your username is {}", basic.username);
@@ -16,7 +16,7 @@ fn secret(basic: BasicAuthRaw) -> String {
 Or you could build Request Guards on top of it (Recommended).
 #### Example
 
-```
+```rust
 struct Admin(User);
 
 impl<'a, 'r> FromRequest<'a, 'r> for Admin {
