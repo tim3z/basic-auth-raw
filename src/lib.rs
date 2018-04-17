@@ -5,6 +5,8 @@
 //! # Example
 //!
 //! ```
+//! use basic_auth_raw::BasicAuthRaw;
+//!
 //! #[get("/secure-path")
 //! fn secret(basic: BasicAuthRaw) -> String {
 //!     format!("Your username is {}", basic.username);
@@ -15,6 +17,8 @@
 //! # Example
 //!
 //! ```
+//! use basic_auth_raw::BasicAuthRaw;
+//!
 //! struct Admin(User);
 //!
 //! impl<'a, 'r> FromRequest<'a, 'r> for Admin {
