@@ -2,6 +2,12 @@
 name = "basic-auth-raw"
 version = "0.1.0"
 authors = ["Sharad Chand <sharad.d.chand@gmail.com>"]
+homepage = "https://github.com/csharad/basic-auth-raw"
+repository = "https://github.com/csharad/basic-auth-raw"
+documentation = "https://docs.rs/basic-auth-raw"
+license = "MIT"
+license-file = "./LICENSE.md"
+readme = "./README.md"
 
 [dependencies]
 rocket = "0.3.8"
