@@ -9,5 +9,5 @@ license = "MIT"
 readme = "./README.md"
 
 [dependencies]
-rocket = "0.3.8"
-base64 = "0.9.0"
+rocket = "0.3.10"
+base64 = "0.9.1"
